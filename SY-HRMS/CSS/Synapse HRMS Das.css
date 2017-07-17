@@ -1,0 +1,164 @@
+/* CSS Document */
+
+*
+{
+margin:0%;
+padding:0%;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	background-color: #F4F3EF;
+}
+.header_div{
+	height: 49px;
+	background-color: #F58220;
+	}
+
+.header_left_logo
+{
+	
+	background-color: #DA6807;
+	color: white;
+	width: 178px;
+
+}	
+.header_left_logo i, .header_left_logo h4
+{
+	line-height: 49px;
+	
+}
+.header_left_logo h4
+{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+
+}
+
+.header_left
+{
+	padding-left: 1px;
+}
+.header_left ul 
+{
+	float:left;
+	margin: 0;
+	padding-left: 20px;
+	line-height: 490px;
+	background-color: #CC6600;
+
+}
+
+.header_right
+{
+	float: right;
+}
+
+.header_right ul 
+{
+	float:right;
+	line-height: 49px;
+
+}
+.header_right ul li, .header_left ul li
+{
+	display: inline-block;
+	width: 40px;
+}
+.header_right ul li a, .header_left ul li a
+{
+	color: white;
+	font-weight: 100;
+}
+
+.profile_div
+{
+	background-color: #F58220;
+	color: white;
+	height: 67px;
+}
+.profile_div span i, .profile_div img
+{
+	line-height: 67px;
+}
+.arrow_right
+{
+	float: right;
+	width: 10px;
+}
+
+.profile_div span
+{
+	line-height: 67px;
+	padding: 0 0 0 4px;
+}
+.profile_div h5
+{
+	margin-bottom: 0;
+	margin-top: 22px;
+	font-size: 0.8em;
+	/*font-family: 'Lato', sans-serif;*/
+}
+.profile_div h6
+{
+	margin-top:2px;
+	font-size: 0.7em;
+
+}
+.profile_div img
+{
+	width: 39px;
+	height: auto;
+}
+.sidebar_div
+{
+	width: 178px;
+	height: 150vh;
+	padding-right: 0;
+    padding-left: 0;
+    background-color: white;
+	float: left;
+}
+
+.list_div li
+{
+	height: 40px;
+	font-size: 0.8em;
+	list-style-type: none;
+}
+
+.list_div img
+{
+	width: 18px;
+}
+
+.list_div ul
+{
+	padding-left: 0px;
+}
+.list_div li a
+{
+	padding-left: 12px;
+	color:#999999;
+	line-height: 40px;
+}
+.list_div .active
+{
+	background-color: #F58220;
+}
+
+.list_div .active a
+{
+	color: white;
+}
+.list_div li:hover 
+{
+	background-color: #F58220;
+}
+
+.list_div li:hover a
+{
+	color: white;
+}

@@ -1,0 +1,411 @@
+//css file of HRMS registration page
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.4em;
+	background-color: #eeeeee;
+}
+
+#upper_div
+{
+	width: 100%;
+	height: 368px;
+	padding-top: 1px;
+	background-color: #eeeeee;
+}
+#login_div
+{
+	/*padding-top: 40px;*/
+	padding-bottom: 10px;
+}
+
+.orange-color
+{
+	color: #FF9933;
+}
+h5
+{
+	color: #777777;
+	margin-bottom: 15px;
+}
+input
+{
+	padding: 12px 4px 12px 25px;
+	margin-bottom: 17px;
+	border: none;
+}
+
+#logo_div img
+{
+	/*margin-top: 20px;*/
+}
+
+/*input[type=text]
+{
+	background: url(images/user_icon.png) no-repeat ;
+padding-left:30px;
+background-color:white; 
+	//background:url(images/user_icon.png);
+	//background-repeat: no-repeat;
+}*/
+
+#login_div img
+{
+	width: 15px;
+	/*position: absolute;*/
+	z-index: 1;
+	/*margin-top: 14px;
+	margin-left: 14px;*/
+
+}
+
+::placeholder
+{
+	padding-left: 0px;
+	color: #999999;
+}
+
+#login_div button
+{
+	background-color: #FF9933;
+    border-radius: 0px;
+    width: 98%;
+    color: white;
+}
+a
+{
+	float: right;
+	margin-right: 10px;
+}
+
+#lower_div
+{
+
+	margin: 0;
+	padding: 0;
+	position: fixed;
+   	bottom: 0;
+}
+.carousel-indicators
+{
+	width:5%;
+}
+
+.content_on_slider
+{
+	position: absolute;
+	z-index: 20;
+	left: 19%;
+	margin-top: 40px;
+	vertical-align: middle;
+}
+
+.content_on_slider h2
+{
+	font-size: 32pt;
+}
+.content_on_slider h4
+{
+	color:white;
+	line-height: 1.5;
+	margin-top: 30px;
+}
+.input-group
+{
+	width: 100%;
+}
+
+.input_icon
+{
+	float: left;
+	width: 40px;
+	height: 44px;
+	padding: 10px 15px 10px 10px;
+	background-color: white;
+}
+.input-group input
+{
+	float: left;
+}
+.left_margin
+{
+	margin-left: 10px;
+	width: 48.3%;
+}
+
+input .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11
+{
+	margin-bottom: 10px;
+}
+.input-group .fa-envelope-o
+{
+	font-size: 15px;
+	padding-top: 3px;
+}
+.icon_none
+{
+	display: none;
+}
+
+/*media querry for extra small screen*/ 
+@media screen and (max-width: 767px) {
+   #lower_div
+   {
+   	 display: none;
+   }
+   #upper_div
+   {
+   	 height: 100vh;
+   }
+   #login_div button
+   {
+   	position: static;
+   	width: 100%;
+   }
+   #login_div
+   {
+   	padding-top: 73px;
+   }
+   a
+   {
+	 margin-top: 20px;
+     margin-right: 0px;
+	}
+	.input_icon
+	{
+		width: 7%;
+	}
+	.input-group input
+	{
+		width: 92%;
+	}
+	.left_margin
+	{
+		margin-left: 0;
+		width: 100%;
+	}
+	.icon_none
+	{
+		display: block;
+	}
+}
+
+/*media querry for small screen*/
+@media screen and (max-width: 992px) and (min-width: 768px) {
+   
+   #login_div button
+   {
+   	position: static;
+   	width: 100%;
+   }
+   #login_div
+   {
+   	padding-top: 73px;
+   }
+   a
+   {
+	 margin-top: 20px;
+     margin-right: 0px;
+	}
+	.input_icon
+	{
+		width: 3%;
+	}
+	.input-group input
+	{
+		width: 97%;
+	}
+	.left_margin
+	{
+		margin-left: 0;
+		width: 100%;
+	}
+	.icon_none
+	{
+		display: block;
+	}
+}
+
+@media only screen and (min-width:320px) and (max-width: 359px)
+{
+	.input_icon
+	{
+    	width: 14%;
+	}
+	.input-group input
+	{
+		width: 85%;
+	}
+	h3
+	{
+   	    line-height: 1.5;
+   	    font-size: 22px;
+	}
+	#login_div
+	{
+    	padding-top: 5px;
+	}
+
+}
+@media only screen and (min-width:360px) and (max-width: 399px)
+{
+	.input-group input
+	{
+		width: 91%;
+	}
+	h3
+	{
+    	font-size: 18px;
+	}
+}
+@media only screen and (min-width:400px) and (max-width: 680px)
+{
+	h3
+	{
+		font-size: 21px;
+	}
+}
+@media screen and (max-width: 480px) {}
+
+@media screen and (min-height: 1024px)
+{
+	.input-group input
+	{
+    	width: 96%;
+    	margin-bottom: 23px;
+	}
+	h5
+	{
+      margin-bottom: 45px;
+
+	}
+	#upper_div
+	{
+		    padding-top: 29px;
+	}
+	h4
+	{
+    	font-size: 17px;
+    	margin-right: 146px;
+	}
+	.content_on_slider h2
+	{
+    	font-size: 21pt;
+	}
+	.content_on_slider h4
+	{
+		margin-top: 0;
+	}
+	.carousel-indicators
+	{
+    	width: 8%;
+    }
+    .content_on_slider
+    {
+    	margin-top: 0;
+    }
+
+}
+
+@media screen and (min-height: 1300px) {
+
+	#logo_div
+	{
+		width: 100%;
+	}
+	#login_div
+	{
+    	width: 100%;
+    	margin: 167px auto;
+	}
+	#login_div button
+   {
+   	position: static;
+   	width: 100%;
+   }
+
+	.icon_none
+	{
+		display: block;
+	}
+	
+	.left_margin
+	{
+		margin-left: 0px;
+		/*idth: 48.3%;*/
+	}
+
+	.input-group input
+	{
+    	width: 95.5%;
+    	
+    }
+    #logo_div img
+    {
+     width: 229px;
+	}
+  	h3
+  	{
+    	font-size: 31px;
+	}
+	h4
+	{
+		margin-right: 0px;
+	}
+}
+
+
+@media only screen and (device-width:1024px)
+{
+	#login_div
+	{
+    	margin-top: 64px;
+    	width: 100%;
+	}
+	.col-md-11
+	{
+    	width: 94%;
+	}
+	.left_margin
+	{
+ 	    width: 51.3%;
+	}
+}
+
+@media only screen and (device-width:1366px) and (device-height:1024px)
+{
+	#login_div
+	{
+    	margin-top: 64px;
+    	width: 100%;
+	}
+	.col-md-11 input
+	{
+    	width: 94%;
+	}
+	.left_margin
+	{
+ 	   /* width: 51.3%;*/
+	}
+	.input-group input
+	{
+    	width: 47%;
+	}
+	#myemail
+	{
+		width: 95%;
+	}
+	a
+	{
+    	margin-top: 20px;
+       	margin-right: 26px;
+	}
+}/* CSS Document */
+
