@@ -1,12 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!-- Latest compiled and minified CSS -->
+<!--<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>-->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <!-- Optional theme -->
+<script src="file:///C|/Users/Ankit Sinha/Downloads/jquery-3.2.1.min.js"></script>
+<script src="Synapse HRMS Das.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,98 +19,599 @@
 
 <link rel="stylesheet" href="Synapse HRMS Das.css">
 <title>Synapse Dashboard</title>
+	
 </head>
 
 <body>
+<div class="row">
+	<div class="header_div col-xs-12 col-sm-12 col-md-12 col-lg-12" >
 
-<div class="header_div col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-	<div class="header_left_logo col-xs-7 col-sm-7 col-md-7 col-lg-7">
-		<span  class="content_hide col-xs-9 col-sm-9 col-md-9 col-lg-9"><h4>Synapse</h4></span>
-		<span id="toggle_button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-bars" aria-hidden="true"></i>
-			</span>
-    </div>
- <div class="header_left col-xs-5 col-sm-5 col-md-5 col-lg-5">
- 			<ul>
+		<div class="header_left_logo col-xs-4 col-sm-3 col-md-4 col-lg-4">
+				<span  class="content_hide col-xs-7 col-sm-9 col-md-9 col-lg-9">
+				<h5>Synapse</h5>
+				</span>
+				<span id="toggle_button" class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><i class="fa fa-bars" aria-hidden="true"></i>
+				</span>
+    	</div>
+	   <div class="header_left col-xs-3 col-sm-4 col-md-4 col-lg-4">
+ 				<ul>
  				<li><a><i class="fa fa-search " aria-hidden="true"></i> </a></li>
- 			</ul>
-      <input type="text" name="search" placeholder="Search...">
+				</ul>
+      			<input type="text" name="search" placeholder="">
  		</div>
-<div class="header_right col-xs-6 col-sm-6 col-md-3 col-lg-3">
- 			<ul>
+		
+		<div class="header_right col-xs-5 col-sm-5 col-md-4 col-lg-4">
+ 				<ul>
  				<li><a><i class="fa fa-envelope-o " aria-hidden="true"></i></a></li>
  				<li><a><i class="fa fa-th " aria-hidden="true"></i></a></li>
  				<li><a><i class="fa fa-window-maximize " aria-hidden="true"></i></a></li>
- 			</ul>
+ 				</ul>
  		</div>
 
-</div>
+	</div>
+</div>	
+<!--end of header-->
+
+<!--bottom part start-->
+<div class="row">
+	<div class="bottom_div col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <!--sidebar div-->
-	<div class="sidebar_div">
+
+		<div class="sidebar_div col-xs-4 col-sm-4 col-md-4 col-lg-">
  		<!--profile div-->
- 		<div class="profile_div">
- 			<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><img src="profile-img-2.png"/></span>
- 			<span  class="content_hide col-xs-7 col-sm-7 col-md-7 col-lg-7">
+ 			<div class="profile_div">
+ 				<span class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<img src="profile-img-2.png"/>
+				</span>
+ 				<span  class="content_hide col-xs-7 col-sm-7 col-md-7 col-lg-7">
  				<h5>JOHN DOE</h5>
  				<h6>Web Designer</h6>
- 			</span>
- 			<span class="arrow_right col-xs-1 col-sm-1 col-md-1 col-lg-1"><i class="fa fa-angle-right" aria-hidden="true"></i>
-			</span>
- 		</div>
+ 				</span>
+ 				<span class="arrow_right col-xs-1 col-sm-1 col-md-1 col-lg-1">	
+				<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+ 			</div>
  	<!--end of profile div-->
-	<div class="list_div">
+	<!--list view-->
+		<div class="list_div">
  			<ul>
  				<li class="active">
- 					<span class="list_icon"><a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i>
-					</a></span>
- 					<span class="content_hide"><a href="#">Dashboard</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-home fa-2x" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Dashboard</a>
+					</span>
  				</li>
 				
  				<li >
- 					<span class="list_icon"><a href="#"><i class="fa fa-building-o" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Firm</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-building-o" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Firm</a>
+					</span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-home fa-users" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Employee</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-home fa-users" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Employee</a>
+					</span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i></a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-calendar" aria-hidden="true"></i>
+					</a>
+					</span>
  					<span class="content_hide"><a href="#">HR Calender</a></span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Manage Attendance</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Manage Attendance</a>
+					</span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-product-hunt" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Manage Project</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-product-hunt" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Manage Project</a>
+					</span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-check-circle-o" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Daily Work Logs</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-check-circle-o" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Daily Work Logs</a>
+					</span>
  				</li>
 
  				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-pencil-square-o"  aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Project Reports</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-pencil-square-o"  aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Project Reports</a>
+					</span>
  				</li>
 				
 				<li>
- 					<span class="list_icon"><a href="#"><i class="fa fa-address-book-o" aria-hidden="true"></i></a></span>
- 					<span class="content_hide"><a href="#">Attendence Reports</a></span>
+ 					<span class="list_icon">
+					<a href="#">
+					<i class="fa fa-address-book-o" aria-hidden="true"></i>
+					</a>
+					</span>
+ 					<span class="content_hide">
+					<a href="#">Attendence Reports</a>
+					</span>
  				</li>
  			</ul>
  		</div>
  		<!--end of list-row-div-->
-
- 	</div>
+		</div>
  	<!--end of sidebar div-->
 
+	<!--Inside content div-->
+	
+	  <div class="content_div col-xs-8 col-sm-9 col-md-9 col-lg-10">
+ 		<!--Adding firm details div-->
+ 			<div class="add_firm_div color_light_magenta content_div col-xs-12 col-sm-12 col-md-12 col-lg-12">
+ 			<!--firm_details div-->
+ 				<h3>
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				
+ 						<div class="well">140<br>Work in Progress.
+						</div>
+						
+ 				</div>
 
+				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+					
+ 					    <div class="well">120<br>Task Completed.
+					    </div>
+						
+ 				</div>
+
+ 				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				
+ 						<div class="well">96<br>Fixed Bug.
+						</div>
+						
+ 				</div>
+
+ 				<div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3">
+				
+						<div class="well">20<br>Task Pending.
+						</div>
+
+ 				</div>
+				</h3>
+ 					
+			</div>
+			<!--End of Adding firm details div-->
+		</div>
+		<!--content over-->
+
+		<!--Dropdown table div-->
+			<div class="add_firm_div color_light_magenta content_div col-xs-8 col-sm-9 col-md-9 col-lg-10">
+
+ 				<div class="log_div col-xs-10 col-sm-1 col-md-1 col-lg-1">
+ 				<h5>Logs</h5>
+ 				</div>
+				
+ 				<div class="form-group_drop col-xs-10 col-sm-3 col-md-4 col-lg-3">
+ 						<button class="btn dropdown-toggle"  type="button" data-toggle="dropdown">
+						<small>Select your project from dropdown menu</small>
+						<span class="caret">
+						</span>
+					    </button>
+					<ul class="dropdown-menu">
+					
+						<li>Project1</li>
+						<li>Project 2</li>
+						<li>Project 3</li>
+						
+					 </ul>
+				</div>
+				
+				<div class="form-group_start col-xs-10 col-sm-3 col-md-4 col-lg-2">
+ 						<button class="btn dropdown-toggle"  type="button" data-toggle="dropdown">
+						<small>Select Start date</small>
+						<span class="list_icon">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					    </button>
+				</div>
+				
+				<div class="form-group_end col-xs-10 col-sm-3 col-md-4 col-lg-3">
+ 						<button class="btn dropdown-toggle"  type="button" data-toggle="dropdown">
+						<small>Select End date </small>
+						<span class="list_icon">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						</span>
+					    </button>
+				</div>
+				
+				<div class="form-group_btn col-xs-10 col-sm-1 col-md-4 col-lg-1">
+						<button class="btn btn-warning" type="submit">Result</button>
+
+				</div>
+							
+			</div>
+		
+ 	<!--end of 	Dropdown div-->
+	<!--Table start-->
+			<div class="tables col-xs-8 col-sm-9 col-md-9 col-lg-10 ">
+						
+					<table class="table table-responsive table-striped">
+				    <thead>
+      					<tr>
+      					  	<th>ID</th>
+        					<th>Project</th>
+        					<th>Module</th>
+        					<th>Activity</th>
+							<th>Date</th>
+							<th>Clocked hours</th>
+							<th>Descriptions</th>
+      					</tr>
+    				</thead>
+    				<tbody>
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+      					</tr>
+      					
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>  				
+						</tr>
+
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+						</tr>
+
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+						</tr>
+
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+						</tr>
+
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+						</tr>
+
+      					<tr>
+        					<td>1</td>
+        					<td>Learning</td>
+        					<td>Web Designing</td>
+        					<td>Implementation</td>
+							<td>01/30/2017</td>
+        					<td>8.0 Hrs</td>
+        					<td><i class="fa fa-plus-square" aria-hidden="true"></i></td>
+						</tr>
+
+    				</tbody>
+  				</table>
+		</div>
+<!--Activity,event part started-->
+		
+	<div class="activity col-xs-8 col-sm-9 col-md-9 col-lg-10">
+ 			<div class="first_part_div  col-xs-4 col-sm-4 col-md-3 col-lg-3" style="background-color:#CCCCCC">
+	<form id="loginform" class="form-horizontal" role="form" style="background:#FFFFFF ; display:inline-block" >
+  			
+      				<h3> Last Reviews</h3>
+	 				 <hr />
+	  				<div class="logo_icon">
+						
+						<span class="col-xs-480 col-sm-30 col-md-12 col-lg-12">
+						<img src="profile-icon.png"/>
+						<h5>Firoj Ansari</h5>
+						<h6>Amet odlo neque nobisconsequtorrrr a quae ,impedit facere,impedit facere</h6>
+						</span>
+						<hr />
+						<span class="col-xs-480 col-sm-30 col-md-12 col-lg-12">
+						<img src="profile-icon.png"/>
+						<h5>Rachna Sharma</h5>
+						<h6>Amet odlo neque nobisconsequtorrrr a quae ,impedit facere,impedit facere</h6>
+						</span>
+						<hr />
+						<span class="col-xs-480 col-sm-30 col-md-12 col-lg-12">
+						<img src="profile-icon.png"/>
+						<h5>Sachin gupta</h5>
+						<h6>Amet odlo neque nobisconsequtorrrr a quae ,impedit facere,impedit facere</h6>
+						</span>
+						<hr />
+						<span class="col-xs-480 col-sm-30 col-md-12 col-lg-12">
+						<img src="profile-icon.png"/>
+						<h5>Sahil Talreja</h5>
+						<h6>Amet odlo neque nobisconsequtorrrr a quae ,impedit facere,impedit facere</h6>
+						</span>
+				
+					</div>
+				</form>
+			</div>		
+ 	
+    <!--End of event-->
+	
+	<!--Start  of activity-->
+	
+			<div class="second_part_div container col-xs-4 col-sm-4 col-md-3 col-lg-3" style="background-color:#CCCCCC"> 
+			<form id="loginform" class="form-horizontal" role="form" style="background:#FFFFFF ; display:block" >
+ 
+				  	<h3>Activity</h3>
+				  	<hr />
+					
+				   	<div class="list-group">
+	
+			  			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+						
+						<div class="d-flex w-100 justify-content-between">
+				  			<h5 class="mb-1">10 min</h5>
+						</div>
+						
+						<p class="mb-1">New task assigned</p>
+			 			 </a>
+			  			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+						
+						<div class="d-flex w-100 justify-content-between">
+				  		<h5 class="mb-1">10 min</h5>
+						</div>
+						
+						<p class="mb-1">New project assigned.</p>
+			  			</a>
+						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+				
+						<div class="d-flex w-100 justify-content-between">
+				  		<h5 class="mb-1">10 min</h5>
+						</div>
+						
+						<p class="mb-1">Firoj has finished "Amaza HTML Task".</p>
+			  			</a>
+						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+						
+						<div class="d-flex w-100 justify-content-between">
+				  		<h5 class="mb-1">10 min</h5>
+						</div>
+						
+						<p class="mb-1">Mitesh has finished "Amaza php task".</p>
+			  			</a>
+			
+					</div>
+				</form>
+			</div>		  
+    
+	<!--end of activity-->
+	        
+	<!--start of to do-->
+	
+ 	
+  			<div class="third_part_div container col-xs-4 col-sm-4 col-md-3 col-lg-3 " style="background-color:#CCCCCC"> 
+			<form id="loginform" class="form-horizontal" role="form" style="background:#FFFFFF ; display:compact" >
+ 
+					<h3>To Do List</h3>
+					<hr />
+		  
+					<h4>
+					<ul id="myUL">
+						Fix all bugs
+						<hr />
+						
+						<a class="checked">Pay bills<a>
+						<hr />
+			  
+						Send all docs
+						<hr />
+						
+						Attend wedding
+						<hr />
+			  
+						Read a book
+						<hr />
+						
+						Organize office
+						<hr />
+		 
+					</ul>
+					</h4>
+					
+			</div>
+			</form>
+	</div>
+			 
+    <!--end of To Do -->
+	
+	<!--start of Last and Chat -->
+	
+	
+	<div class="last col-xs-8 col-sm-9 col-md-9 col-lg-10"	>
+	
+	<!--Start of event in last -->
+	
+			<div class="last_part_div  col-xs-4 col-sm-4 col-md-3 col-lg-3" style="background-color:#CCCCCC"> 
+				  <h3>Events</h3>
+				  <hr />
+				  
+				  <div class="list-group">
+			  	  		<a href="#" class="list-group-item list-group-item-action flex-column align-items-start " style="background:#00FF33">
+				  		<div class="d-flex w-100 justify-content-between">
+				  			<h4 class="mb-1">25</h4>
+						</div>
+						<p class="mb-1">3 events.<br>Monday. Feburary 2015 </p>
+			 			</a>
+			 			<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+						<div class="d-flex w-100 justify-content-between">
+				  			<h6 class="mb-1">Sunday    Feburary 2017,7:00 AM</h6>
+						</div>
+						<p class="mb-1">Jio Indore Marathon.</p>
+			  			</a>
+						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+						<div class="d-flex w-100 justify-content-between">
+				  			<h6 class="mb-1">Monday    Feburary 2017,7:00 AM</h6>
+						</div>
+						<p class="mb-1">Meeting with Sureel.</p>
+			  			</a>
+						<a href="#" class="list-group-item list-group-item-action flex-column align-items-start start">
+						<div class="d-flex w-100 justify-content-between">
+				 			 <h6 class="mb-1">Tuesday   Feburary 2017,7:00 AM</h6>
+						</div>
+						<p class="mb-1">Meeting with HRD</p>
+			  			</a>
+			
+				</div>
+				
+		  </div>		  
+			
+<!--end of event in last-->
+  
+  <!--start of chat -->
+  
+        <div class="chat_part_div col-xs-4 col-sm-4 col-md-5 col-lg-10">
+				<h3>ChatBox</h3>
+				<hr>
+           			<div class="panel panel ">
+					<span class="chat-img pull-left">
+                            	<img src="http://placehold.it/50/55C1E7/fff&text=U" alt="User Avatar" class="img-square" />
+                        		</span>
+					
+                			<div class="panel-heading">
+                    			 Sahil Talreja online 
+                   			</div>
+							<hr/>
+               				 <div class="panel-body">
+                    			<ul class="chat">
+                        		<li class="left clearfix">
+								
+								
+                           	 <div class="chat-body clearfix">
+							
+                                <div class="header">
+                                    	<strong class="primary-font">Sahil</strong> 
+										<small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time">
+										</span>12 mins ago</small>
+                                </div>
+                                <p>
+                                    Hello Firoj . Are the review papers ready?
+                                </p>
+                            	</div>
+							
+								</li>
+								<li class="right clearfix">
+								<div class="chat-body clearfix">
+								
+									<div class="header">
+										<small class=" text-muted">
+										<span class="glyphicon glyphicon-time">
+										</span>13 mins ago</small>
+										<strong class="pull-right primary-font">Firoj</strong>
+									</div>
+									<p>
+										No it will take a bit of time for you to get them.
+									</p>
+								</div>
+								
+								</li>
+								<li class="left clearfix">
+							
+                           		 <div class="chat-body clearfix">
+                                	<div class="header">
+                                    	<strong class="primary-font">Sahil</strong> 
+										<small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time">
+										</span>14 mins ago</small>
+                                	</div>
+                                	<p>
+                                    Treat it on urgent basis.
+                                	</p>
+                           		 </div>
+                        			</li>
+                       				</ul>
+               		 	</div>
+					 
+					<!--end of panel-body-->
+					 
+               		 <div class="panel-footer">
+					 
+							<div class="input-group">
+								<input id="btn-input" type="text" class="form-control input-sm" placeholder="Type " />
+								<span class="input-group-btn">
+								<button class="btn btn-warning btn-sm " style="float:right"  id="btn-chat">Send</button>
+								</span>
+                    		</div>
+							
+                	</div>
+					<!--end of panel-footer-->
+         		</div>
+				<!--end of panel-primary-->
+		 	</div>
+		<!--end of chat--> 
+		</div>
+		
+		</div>
+	
+	
 </body>
 </html>
+
