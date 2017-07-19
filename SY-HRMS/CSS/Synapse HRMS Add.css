@@ -1,39 +1,46 @@
-/* CSS Document */
-
+//css file of dashbord
 *
 {
-margin:0%;
-padding:0%;
+	margin: 0;
+	padding: 0;
 }
 
-body{
+body
+{
 	font-family: 'Lato', sans-serif;
 	font-size: 1.4em;
 	background-color: #F4F3EF;
 }
 
-.header_div{
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf')
+}
+
+.header_div
+{
+
 	height: 49px;
 	background-color: #F58220;
 	margin: 0;
 	padding: 0;
-	
-	
-	}
+	font-family: 'Lato', sans-serif;
+}
 
 .header_left_logo
 {
-
+	/*background-color: #FF6633;*/
 	background-color: #DA6807;
 	color: white;
 	width: 178px;
 
-}	
+}
 .header_left_logo i, .header_left_logo h5
 {
 	line-height: 49px;
 	
 }
+
 .header_left_logo h5
 {
 	padding: 0;
@@ -42,7 +49,16 @@ body{
 
 }
 
+.header_right
+{
+	float: right;
+}
+.header_right ul 
+{
+	float:right;
+	line-height: 49px;
 
+}
 .header_left
 {
 	padding-left: 1px;
@@ -51,21 +67,9 @@ body{
 {
 	float:left;
 	margin: 0;
-	padding-left:0px;
+	padding-left: 20px;
 	line-height: 49px;
 	background-color: #CC6600;
-
-}
-
-.header_right
-{
-	float: right;
-}
-
-.header_right ul 
-{
-	float:right;
-	line-height: 49px;
 
 }
 .header_right ul li, .header_left ul li
@@ -76,23 +80,8 @@ body{
 .header_right ul li a, .header_left ul li a
 {
 	color: white;
-	font-weight:700;
+	font-weight: 100;
 }
-.bottom_div{
-	height: 200%;
-	background-color:#CCCCCC;
-	margin: 0;
-	padding: 0;
-	
-	}
-	.btm_div{
-	height: 200%;
-	background-color:#CCCCCC;
-	margin: 0;
-	padding: 0;
-	
-	}
-
 .profile_div
 {
 	background-color: #F58220;
@@ -135,8 +124,7 @@ body{
 .sidebar_div
 {
 	width: 178px;
-	height: 215vh;
-	margin-right:1.5%;
+	height: 150vh;
 	padding-right: 0;
     padding-left: 0;
     background-color: white;
@@ -146,7 +134,6 @@ body{
 .list_div li
 {
 	height: 40px;
-	background-color:#FFFFFF;
 	font-size: 0.8em;
 	list-style-type: none;
 }
@@ -184,11 +171,11 @@ body{
 {
 	color: white;
 }
+
 .content_div
 {
 	float: left;
 	background-color: #F4F3EF;
-	
 	/*width: 1169px;
 	max-width: 86%
 	/*max-width: 86.8%;*/
@@ -198,7 +185,7 @@ body{
 .add_firm_div, .search_table_div
 {
 	
-	
+	width: 100%;
 	margin:15px 0 15px 0;
 	padding: 8px 0 8px 0;
 	float:left;
@@ -209,10 +196,12 @@ body{
 {
 	background-color: #FFFCF5;
 }
-.tables{
-background:#FFFFFF;
-
+.search_table_div
+{
+	background-color: white;
+	margin-top: 0;
 }
+
 .firm_details_div .form-control, .input-group .form-control, .search_table_div .input-group-addon
 {
 	border-radius: 0px;
@@ -278,6 +267,44 @@ background:#FFFFFF;
 {
  line-height: 35px;
 }
+.pagination_search
+{
+	float: left;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:first-child > a, .pagination > li:first-child > span {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #888888;
+}
+
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+     margin-left: 0; 
+     border-top-left-radius: 0px; 
+     border-bottom-left-radius: 0px; 
+
+}
+.pagination li a
+{
+	margin-right: 20px;
+	box-shadow: 3px 3px 0px 1px #dddddd;
+}
+
+.pagination .active 
+{
+	background-color: #F58220;
+}
+table .fa-plus-square
+{
+	color: #F58220;
+}
+.pagination .active i
+{
+	color: white
+}
+.pagination li a
+{
+	color: #888888;
+}
 
 .header_left input[type=text] {
     width: 130px;
@@ -295,64 +322,123 @@ background:#FFFFFF;
 
 .header_left input[type=text]:focus {
     width: 60%;
-}/* Remove margins and padding from the list */
-
-.log_div 
-{
-margin-left:1%;
 }
-.form-group_drop
- {
- margin-left:2%;
- }
+
+@media only screen and (min-width:1200px) and (max-width:2000px)
+{
+.col-lg-10 {
+    width: 85%;
+}
+}
+
+@media only screen and (min-width:991px) and (max-width:1200px)
+  {
+  	.col-md-8
+	{
+		width: 81.666667%;	
+	}
+}
+
+@media only screen and (min-width:768px) and (max-width: 992px)
+{ 
+	.col-sm-6
+{
+	width: 76%;
+}
+}
+
+@media only screen and (min-width:600px) and (max-width: 768px)
+{
+ .col-xs-6
+	{
+		float:left;
+	 width: 500px;
+	overflow-x: auto;
+	}
  
- .form-group_start 
+ .add_firm_div
  {
- margin-left:2%;
+ 	width: 768px;
+ 	overflow-x: scroll;
  }
- 
- .form-group_end 
+ .firm_details_div
  {
- margin-left:2%;
+ 	width: 768px;
+ 	overflow-x: scroll;
  }
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 359px)
+{
+	.col-xs-6
+	{
+		float:left;
+	 	width: 142px;
+	 	overflow-x: scroll;
+	}
+
+ .add_firm_div
+ {
+ 	width: 400px;
+ 	overflow-x: scroll;
+ }
+ .firm_details_div
+ {
+ 	width: 400px;
+ 	overflow-x: scroll;
+ }
+
+}
+@media only screen and (min-width:360px) and (max-width: 399px)
+{
+	.col-xs-6
+	{
+		float:left;
+	 width: 180px;
+	overflow-x: auto;
+	}
  
- .form-group_btn
-{
-
-margin-left:2%;}
-
-.first_part_div
-{
-margin-top:4%;
-width:30%;
-margin-left:-2%;
-margin-right:2%;
-overflow:hidden;
-height:50%;
-
+ .add_firm_div
+ {
+ 	width: 768px;
+ 	overflow-x: scroll;
+ }
+	.firm_details_div
+	 {
+ 		width: 768px;
+ 		overflow-x: scroll;
+ 	}
 }
-.second_part_div
+@media only screen and (min-width:400px) and (max-width: 680px)
 {
-margin-top:2%;
-width:30%;
-margin-right:2%;
+	.col-xs-6
+	{
+		float:left;
+	 width: 227px;
+	overflow-x: auto;
+	}
+ 
+ .add_firm_div
+ {
+ 	width: 768px;
+ 	overflow-x: scroll;
+ }
+	.firm_details_div
+	 {
+ 		width: 768px;
+ 		overflow-x: scroll;
+ 	}
+ 	.header_right
+ 	{
+ 		width: 32%;
+ 	}
+ 	.header_left
+ 	{
+ 		width: 40%;
+ 	}
 }
-.third_part_div
-{
-margin-top:2%;
-width:30%;
-margin-right:2%;
-}
-.last_part_div
-{
 
-width:30%;
-height:50%;
-}
-.chat_part_div
-{
+@media screen and (max-width: 480px) {
 
-
-width:70%;
-height:50%;
 }
